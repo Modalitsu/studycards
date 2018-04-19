@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src="js/myscripts.js"></script>
+  </head>
+
+  <body>
+    <h1>
+      <a href="index.html">STUDY CARDS</a> → INFO102
+    </h1>
+
+    <div class='content'>
+
+      <div class='redDiv'>
+
+        <h2>
+          Set Teori: Hva er en Universalmengde?
+        </h2>
+
+        <div class='button'>
+          Fasit
+        </div>
+
+        <div class='projects'>
+          <br>
+          <hr>
+          <p>
+            Universalmengden er mengden over alle elementene i et spesifikt univers.
+            Komplimentet av universalmengden er den tomme mengden.
+          </p>
+          <hr>
+        </div>
+      </div>
+
+      <div class='blueDiv'>
+        <h2>
+          Relasjoner: Hvilke egenskaper kjennetegner en ekvivalensrelasjon?
+        </h2>
+
+        <div class='button'>
+          Fasit
+        </div>
+
+        <div class='projects'>
+          <p>
+            <br>
+            <hr>
+            En ekvivalensrelasjon har egenskapene <b>refleksivitet</b>, <b>symmetri</b> og <b>transitivitet</b>.
+            <hr>
+            <br><br>
+              <b>Refleksivitet:</b> &forall;x (x,x) &exist; R
+            <br><br>
+              <b>Symmetri:</b> &forall;x &forall;y ((x,y) &exist; R → (y,x) &exist; R)
+            <br><br>
+              <b>Transitivitet:</b> &forall;x &forall;y &forall;z ((x,y) &exist; R &and; (y,z) &exist; R → (x,z) &exist; R
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCB_rYmaPdoxxKrTvlP6aZlzhqPZcqXFRw",
+        authDomain: "studycards-7e84d.firebaseapp.com",
+        databaseURL: "https://studycards-7e84d.firebaseio.com",
+        projectId: "studycards-7e84d",
+        storageBucket: "studycards-7e84d.appspot.com",
+        messagingSenderId: "304056389208"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </body>
+</html>
