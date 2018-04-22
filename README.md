@@ -1,29 +1,10 @@
-# README #
+# StudyCards #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Enkel eksamen quiz med relevant spørsmål og svar til respektive fag.
+Spørmsål og svar er ekstrahert fra eldre eksamenssett på INFOVIT ved Det samfunnsvitenskapelige fakultet, UiB. 
 
-### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Kontakt ###
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+All kode er skrevet av Arein Shibani.
+Kontakt kan oppnåes via mail: aaari94@gmail.com
