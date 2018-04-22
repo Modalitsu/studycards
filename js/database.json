@@ -1,0 +1,62 @@
+{
+  "fag" : {
+    "info102" : {
+      "cards" : {
+        "card1" : {
+          "answer" : "Universalmengden er mengden over alle elementene i et spesifikt univers.             Komplimentet av universalmengden er den tomme mengden.",
+          "keywords" : [ "mengder" ],
+          "question" : "Hva er en Universalmengde?",
+          "type" : "QandA"
+        },
+        "card2" : {
+          "answer" : "En ekvivalensrelasjon har egenskapene refleksivitet, symmetri og transitivitet.",
+          "keywords" : [ "relasjoner", "ekvivalens", "refleksivitet", "symmetri", "transitivitet", "mengder" ],
+          "question" : "Hvilke egenskaper kjennetegner en ekvivalensrelasjon?",
+          "type" : "QandA"
+        },
+        "card3" : {
+          "answer" : "A&cap;C = {1} <br> ",
+          "keywords" : [ "mengder", "Snitt" ],
+          "question" : "Hva er A&cap;C? <br> <h6> Gitt at: A = {1, 2, 3}, B = {a, b, c}, C = {0, 1}</h6>",
+          "type" : "derivation"
+        },
+				"card4" : {
+					"answer" : "A&cup;B = {1,2,3,a,b c}",
+					"keywords" : [ "mengder", "Union" ],
+					"question" : "Hva er A&cup;B? <br> <h6> Gitt at: A = {1, 2, 3}, B = {a, b, c}, C = {0, 1}</h6>",
+					"type" : "derivation"
+				},
+				"card3" : {
+					"answer" : "BxC = {(a,0), (a,1), (b,0), (b,1), (c,0), (c,1)}",
+					"keywords" : [ "mengder", "Kartesisk Produkt" ],
+					"question" : "Hva er BxC? <br> <h6> Gitt at: B = {a, b, c} og C = {0, 1}</h6>",
+					"type" : "derivation"
+				},
+				"card4" : {
+					"answer" : "Ja, for eksempel når alle instanser er på formen (x,x)",
+					"keywords" : [ "relasjoner", "mengder", "symmetri", "antisymmetri"],
+					"question":"Kan en relasjon være både symmetrisk og antisymmetrisk?",
+					"type": "QandA"
+				},
+				"card5" : {
+					"answer" : "I logikken kalles en logisk formel for en tautologi når formelen blir sann uansett hvilken sannhetsverdi man tilskriver formelens enkeltutsagn",
+					"keywords" : [ "logikk"],
+					"question":"Hva er en tautologi?",
+					"type": "QandA"
+				},
+				"card6" : {
+					"answer" : "Alle liker Kari.",
+					"keywords" : ["logikk"],
+					"question":"Oversett følgende predikat til muntlig språk:<br>&forall;x liker(x,Kari)",
+					"type": "QandA"
+				},
+				"card7" : {
+					"answer" : "Eksistenskvantoren (noteres med &exist;) er en logisk konstant som kan tolkes som \"det finnes..\", \"det finnes minst én..\" eller \"for noen..\"<br><br> Kvantorer kombineres ofte med predikat for å formalisere enkelte utsagn. <br><br> Eksempel: \"noen elsker deg\" kan skrives slik: &exist;xelskerDeg(x) gitt at universet inneholder alle levende vesener",
+					"keywords" : ["logikk"],
+					"question":"Forklar følgende symbol → &exist;",
+					"type": "QandA"
+				}
+      }
+    }
+  }
+}
