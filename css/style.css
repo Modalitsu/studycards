@@ -1,10 +1,14 @@
+html{
+
+}
+
 body {
   font-family: Helvetica;
   padding: 2em;
   background-color: whitesmoke;
 }
 
-h1 {
+h1,h2 {
   font-size: 2.5em;
 }
 
@@ -16,6 +20,12 @@ h6{
 a{
   text-decoration: none;
   color: black;
+}
+
+.icon{
+  width: 1.2em;
+  position: relative;
+  top: 11px;
 }
 
 
@@ -54,13 +64,14 @@ a{
   padding: 1em 3em 2em 2em;
   margin: 0.5em;
   color: whitesmoke;
+  justify-content: center;
 }
 
 .button {
   padding: 0.75em 1.25em;
+  max-width: 100px;
   background-color: whitesmoke;
   opacity: 0.9;
-  width: 10em;
   color: black;
   box-shadow: 5px 10px;
 }
@@ -76,14 +87,37 @@ ul {
   color: whitesmoke;
 }
 
+img {
+    display: block;
+margin: 20px;
+}
+
+img {
+-webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+
  /* iPhone 6,7 & 8 STYLES GO HERE */
 @media only screen
-and (min-device-width : 375px) and (max-device-width : 667px) {
-  h2{
-    font-size: 2em;
+and  (max-device-width : 807px) {
+
+  h1,h2 {
+    font-size: 1.5em;
   }
 
-  .button{
-    font-size: 200%;
+  body{
+    padding: 0px;
   }
+
+  .icon{
+    width: 2.2em;
+  }
+
 }

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' href='css/style.css'>
     <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
-    <script src="js/myscripts.js"></script>
+    <script src="js/studyCards.js"></script>
+    <link rel="icon" type="image/png"href="studyCardsLogo.png">
   </head>
 
   <body>
@@ -15,18 +15,24 @@
 
     <div class='content'>
 
-      <div class='redDiv'>
+      <div class='blackDiv'>
+        <h2>
+          Effektiv eksamensøving!
+        </h2>
 
+        <p>
+          Test deg selv i følgende fag, med tilfeldige eksamens spørsmål hentet ut fra databasen vår. <br>
+        </p>
+      </div>
+
+      <div class='redDiv'>
         <h2>
           INFO102
         </h2>
 
-        <a href="info102.html">
-          <div class='button'>
-            Start Quiz
-          </div>
-        </a>
-
+        <div class='button'>
+          <a href="info102.html">Start Quiz</a>
+        </div>
       </div>
 
       <div class='blueDiv'>
@@ -50,6 +56,5 @@
       </div>
 
     </div>
-
   </body>
 </html>

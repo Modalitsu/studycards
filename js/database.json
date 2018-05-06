@@ -15,21 +15,21 @@
           "type" : "QandA"
         },
         "card3" : {
-          "answer" : "A&cap;C = {1} <br> ",
+          "answer" : "A&cap;C = {1}",
           "keywords" : [ "mengder", "Snitt" ],
-          "question" : "Hva er A&cap;C? <br> <h6> Gitt at: A = {1, 2, 3}, B = {a, b, c}, C = {0, 1}</h6>",
+          "question" : "<h6> Gitt at: A = {1, 2, 3}, B = {a, b, c}, C = {0, 1}</h6><br>Hva er A&cap;C?",
           "type" : "derivation"
         },
 				"card4" : {
 					"answer" : "A&cup;B = {1,2,3,a,b c}",
 					"keywords" : [ "mengder", "Union" ],
-					"question" : "Hva er A&cup;B? <br> <h6> Gitt at: A = {1, 2, 3}, B = {a, b, c}, C = {0, 1}</h6>",
+					"question" : "<h6> Gitt at: A = {1, 2, 3}, B = {a, b, c}, C = {0, 1}</h6> <br> Hva er A&cup;B?",
 					"type" : "derivation"
 				},
 				"card3" : {
 					"answer" : "BxC = {(a,0), (a,1), (b,0), (b,1), (c,0), (c,1)}",
 					"keywords" : [ "mengder", "Kartesisk Produkt" ],
-					"question" : "Hva er BxC? <br> <h6> Gitt at: B = {a, b, c} og C = {0, 1}</h6>",
+					"question" : "<h6> Gitt at: B = {a, b, c} og C = {0, 1}</h6> <br> Hva er BxC?",
 					"type" : "derivation"
 				},
 				"card4" : {

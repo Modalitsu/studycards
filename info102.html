@@ -1,73 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-    <script src="js/myscripts.js"></script>
-  </head>
 
-  <body>
-    <h1>
-      <a href="index.html">STUDY CARDS</a> → INFO102
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' href='css/style.css'>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script src="js/studyCards.js"></script>
+  <link rel="icon" type="image/png" href="studyCardsLogo.png">
+</head>
+
+<body>
+  <h1>
+      <a href="index.html">STUDY CARDS</a> <img onClick="refreshCards();" id="refreshCards" class="icon crossRotate" alt="Click here to generate new questions" src="media/refresh.svg">
     </h1>
 
-    <div class='content'>
+  <div class='content'>
 
-      <div class='redDiv'>
-        <h2 id="question1"></h2>
-        <div class='button'>
-          Fasit
-        </div>
-        <div class='answer'>
-          <br>
-          <hr><p id="answer1"></p><hr>
-        </div>
+    <div class='redDiv'>
+      <h2 id="question1"></h2>
+      <div class='button'>
+        Fasit
       </div>
-
-      <div class='blueDiv'>
-        <h2 id="question2"></h2>
-        <div class='button'>
-          Fasit
-        </div>
-        <div class='answer'>
-            <br>
-            <hr><p id="answer2"></p><hr>
-        </div>
+      <div class='answer'>
+        <br>
+        <hr>
+        <p id="answer1"></p>
+        <hr>
       </div>
-
-      <div class='yellowDiv'>
-        <h2 id="question3"></h2>
-        <div class='button'>
-          Fasit
-        </div>
-        <div class='answer'>
-          <br>
-          <hr><p id="answer3"></p><hr>
-        </div>
-      </div>
-
-      <div class='blackDiv'>
-        <h2 id="question4"></h2>
-        <div class='button'>
-          Fasit
-        </div>
-        <div class='answer'>
-            <br>
-            <hr><p id="answer4"></p><hr>
-        </div>
-      </div>
-
-      <div class='greenDiv'>
-        <h2 id="question5"></h2>
-        <div class='button'>
-          Fasit
-        </div>
-        <div class='answer'>
-            <br>
-            <hr><p id="answer5"></p><hr>
-        </div>
-      </div>
-
     </div>
-  </body>
+
+    <div class='blueDiv'>
+      <h2 id="question2"></h2>
+      <div class='button'>
+        Fasit
+      </div>
+      <div class='answer'>
+        <br>
+        <hr>
+        <p id="answer2"></p>
+        <hr>
+      </div>
+    </div>
+
+    <div class='yellowDiv'>
+      <h2 id="question3"></h2>
+      <div class='button'>
+        Fasit
+      </div>
+      <div class='answer'>
+        <br>
+        <hr>
+        <p id="answer3"></p>
+        <hr>
+      </div>
+    </div>
+
+    <div class='blackDiv'>
+      <h2 id="question4"></h2>
+      <div class='button'>
+        Fasit
+      </div>
+      <div class='answer'>
+        <br>
+        <hr>
+        <p id="answer4"></p>
+        <hr>
+      </div>
+    </div>
+
+    <div class='greenDiv'>
+      <h2 id="question5"></h2>
+      <div class='button'>
+        Fasit
+      </div>
+      <div class='answer'>
+        <br>
+        <hr>
+        <p id="answer5"></p>
+        <hr>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCB_rYmaPdoxxKrTvlP6aZlzhqPZcqXFRw",
+    authDomain: "studycards-7e84d.firebaseapp.com",
+    databaseURL: "https://studycards-7e84d.firebaseio.com",
+    projectId: "studycards-7e84d",
+    storageBucket: "studycards-7e84d.appspot.com",
+    messagingSenderId: "304056389208"
+  };
+  firebase.initializeApp(config);
+</script>
