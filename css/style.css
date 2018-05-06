@@ -1,6 +1,7 @@
 body {
   font-family: Helvetica;
   background-color: whitesmoke;
+  margin: 0px;
 }
 
 a{
@@ -15,16 +16,11 @@ ul {
 
 #refreshCards {
   padding: 15px;
-  border-style: outset;
+  width: 40px;
   margin: auto;
   margin-bottom: 2em;
 }
 
-#answer1, #answer2, #answer3, #answer4, #answer5{
-  width: 50%;
-  margin: 42px;
-  font-size: 110%;
-}
 
 .header{
   display: flex;
@@ -35,10 +31,13 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 5px;
 }
 
 .redDiv {
-  background-color: #E55126;
+  background: #F00000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .yellowDiv {
@@ -46,15 +45,21 @@ ul {
 }
 
 .blueDiv {
-  background-color: #0C73B8;
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .greenDiv{
-  background-color: green;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .blackDiv{
-  background-color: black;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .redDiv,
@@ -83,9 +88,28 @@ ul {
   cursor: not-allowed;
 }
 
+.rotate{ /*Animation for refresh icon*/
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.rotate.down{
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+
 @media only screen and (min-width: 1000px) {
   .content{
     width: 80%;
     margin: auto;
+  }
+
+}
+
+@media only screen and (max-width: 375px){
+  h2{
+    font-size: 120%;
   }
 }
