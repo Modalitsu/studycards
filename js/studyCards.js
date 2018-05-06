@@ -103,13 +103,14 @@ function main(){
 
 	let questionPool = generateQuestionPool();
 	generateCards();
-	console.log("5 Questions selected randomly from a pool of " + questionPool.length + " question cards.")
+	console.log("INFO102: " + questionPool.length + " question cards in total.")
 
 	//Jquery Hendelses håndtering:
 	$('.answer').hide();
   $('.button').on('click',function(){
     $(this).next().slideToggle(200)
   });
+
 	//Refresh animasjon.
 	$( ".crossRotate" ).click(function() {
 	    if (  $( this ).css( "transform" ) == 'none' ){
@@ -120,15 +121,22 @@ function main(){
 	});
 }
 
-//Deler ut nye spørsmål.
-function refreshCards(){
-	removeCards();
-	generateCards();
+//Returner et Array med alle kort fra et bestemt fag.
+function generateQuestionPool(){
+
+	var questionPool = [];
+	let course = database.fag.info102.cards;
+
+  for (var key in course){
+		questionPool.push(course[key]);
+	}
+
+	return questionPool;
 }
 
 //Fyller ut alle 5 Study Cards med tilfeldig valgte spørsmål.
 function generateCards(){
-	drawFiveQuestions();
+	drawFiveQuestions(generateQuestionPool());
 
 	let shuffleCounter = 0
 
@@ -142,7 +150,8 @@ function generateCards(){
 		card3 === card4 ||
 		card3 === card5 ||
 		card4 === card5){
-		drawFiveQuestions(); //..stokker vi om på fordelingen
+		drawFiveQuestions(generateQuestionPool()
+  ); //..stokker vi om på fordelingen
 		 shuffleCounter++;
 	}
 
@@ -160,24 +169,23 @@ function generateCards(){
 	console.log("Cards generated after " +shuffleCounter+ " shuffles.")
 }
 
-//Tildeler et tilfeldig spørsmål til alle cards.
-function drawFiveQuestions(){
-	card1 = random_item(generateQuestionPool());
-	card2 = random_item(generateQuestionPool());
-	card3 = random_item(generateQuestionPool());
-	card4 = random_item(generateQuestionPool());
-	card5 = random_item(generateQuestionPool());
+//Deler ut tilfeldige spørsmål til alle kort.
+function drawFiveQuestions(array){
+
+	card1 = random_item(array);
+	card2 = random_item(array);
+	card3 = random_item(array);
+	card4 = random_item(array);
+	card5 = random_item(array);
 }
 
-//Returner et Array med alle kort fra et bestemt fag.
-function generateQuestionPool(){
-	var questionPool = [];
-	let input = database.fag.info102.cards;
-	for (var k in input){
-		questionPool.push(input[k]);
-	}
-	return questionPool;
+//Deler ut nye spørsmål.
+function refreshCards(){
+	$('.answer').hide();
+	removeCards();
+	generateCards();
 }
+
 
 //Returner et tilfeldig element fra en ArrayList.
 function random_item(arrayList){

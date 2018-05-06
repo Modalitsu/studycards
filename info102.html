@@ -12,13 +12,15 @@
 </head>
 
 <body>
-  <h1>
-      <a href="index.html">STUDY CARDS</a> <img onClick="refreshCards();" id="refreshCards" class="icon crossRotate" alt="Click here to generate new questions" src="media/refresh.svg">
+    <h1 class="header">
+      <a href="index.html">INFO 102</a>
     </h1>
+
+    <img onClick="refreshCards()" id="refreshCards" class="icon header" alt="Click here to generate new questions" src="media/refresh.svg">
 
   <div class='content'>
 
-    <div class='redDiv'>
+    <div class='blackDiv'>
       <h2 id="question1"></h2>
       <div class='button'>
         Fasit
@@ -31,7 +33,7 @@
       </div>
     </div>
 
-    <div class='blueDiv'>
+    <div class='redDiv'>
       <h2 id="question2"></h2>
       <div class='button'>
         Fasit
@@ -44,7 +46,7 @@
       </div>
     </div>
 
-    <div class='yellowDiv'>
+    <div class='blueDiv'>
       <h2 id="question3"></h2>
       <div class='button'>
         Fasit
@@ -57,7 +59,7 @@
       </div>
     </div>
 
-    <div class='blackDiv'>
+    <div class='yellowDiv'>
       <h2 id="question4"></h2>
       <div class='button'>
         Fasit
@@ -83,6 +85,8 @@
       </div>
     </div>
   </div>
+
+  <img onClick="refreshCards()" id="refreshCards" class="icon header" alt="Click here to generate new questions" src="media/refresh.svg">
 </body>
 
 </html>
