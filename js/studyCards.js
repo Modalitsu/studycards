@@ -119,16 +119,16 @@ function generateCards(courseCode){
   }
 
   //Append to DOM:
-  $("#question1").append(randomlySelectedCards[0].question);
-	$("#answer1").append(randomlySelectedCards[0].answer);
-	$("#question2").append(randomlySelectedCards[1].question);
-	$("#answer2").append(randomlySelectedCards[1].answer);
-	$("#question3").append(randomlySelectedCards[2].question);
-  $("#answer3").append(randomlySelectedCards[2].answer);
-	$("#question4").append(randomlySelectedCards[3].question);
-	$("#answer4").append(randomlySelectedCards[3].answer);
-	$("#question5").append(randomlySelectedCards[4].question);
-	$("#answer5").append(randomlySelectedCards[4].answer);
+  $("#question1").append(randomlySelectedCards[0].question).fadeIn();
+	$("#answer1").append(randomlySelectedCards[0].answer).fadeIn();
+	$("#question2").append(randomlySelectedCards[1].question).fadeIn();
+	$("#answer2").append(randomlySelectedCards[1].answer).fadeIn();
+	$("#question3").append(randomlySelectedCards[2].question).fadeIn();
+  $("#answer3").append(randomlySelectedCards[2].answer).fadeIn();
+	$("#question4").append(randomlySelectedCards[3].question).fadeIn();
+	$("#answer4").append(randomlySelectedCards[3].answer).fadeIn();
+	$("#question5").append(randomlySelectedCards[4].question).fadeIn();
+	$("#answer5").append(randomlySelectedCards[4].answer).fadeIn();
 }
 
 //Returner et Array med alle kort fra et bestemt fag.
@@ -158,16 +158,16 @@ function randomItemFrom(arrayList){
 
 //Tømmer alle kort i document
 function removeCards(){
-	$("#question1").empty();
-	$("#answer1").empty();
-	$("#question1").empty();
-	$("#answer1").empty();
-	$("#question2").empty();
-	$("#answer2").empty();
-	$("#question3").empty();
-	$("#answer3").empty();
-	$("#question4").empty();
-	$("#answer4").empty();
-	$("#question5").empty();
-	$("#answer5").empty();
+	$("#question1").empty().fadeOut(1);
+	$("#answer1").empty().fadeOut(1);
+	$("#question1").empty().fadeOut(1);
+	$("#answer1").empty().fadeOut(1);
+	$("#question2").empty().fadeOut(1);
+	$("#answer2").empty().fadeOut(1);
+	$("#question3").empty().fadeOut(1);
+	$("#answer3").empty().fadeOut(1);
+	$("#question4").empty().fadeOut(1);
+	$("#answer4").empty().fadeOut(1);
+	$("#question5").empty().fadeOut(1);
+	$("#answer5").empty().fadeOut(1);
 }
