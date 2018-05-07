@@ -14,6 +14,11 @@ ul {
   padding: 0;
 }
 
+h2{
+  margin-right: 13px;
+}
+
+
 #refreshCards {
   padding: 15px;
   width: 40px;
@@ -79,8 +84,12 @@ ul {
   opacity: 0.9;
   width: 10em;
   color: black;
-  box-shadow: 5px 10px;
-  transition: 2s;
+  box-shadow: 1px 3px 4px 0px;
+  transition: 0.1s;
+}
+
+.button:hover{
+  box-shadow: inset 0px 1px 0px 0px;
 }
 
 .disabled {
@@ -108,8 +117,12 @@ ul {
 
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 500px){
   h2{
     font-size: 120%;
+  }
+
+  p{
+    font-size: 110%
   }
 }

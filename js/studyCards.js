@@ -74,7 +74,7 @@ const database = {
           "type" : "QandA"
         },
         "card5" : {
-          "answer" : "<ol> står for \"ordered list\" som er et element i en ordnet liste. Det vil si at man da vil få et tall forran elementet. <ul> står for \"unordered list\" og vil fremdeles være et liste element, men istedenfor tall så vil elementet bli representert med en dot/prikk istedenfor.",
+          "answer" : "&lt;ol&gt; står for \"ordered list\" som er et element i en ordnet liste. Det vil si at man da vil få et tall forran elementet. &lt;ul&gt; står for \"unordered list\" og vil fremdeles være et liste element, men istedenfor tall så vil elementet bli representert med en dot/prikk istedenfor.",
           "keywords" : "HTML",
           "question" : "Hva er forskjellen mellom &lt;ul&gt; og &lt;ol&gt;?",
           "type" : "QandA"
@@ -108,27 +108,27 @@ function main(courseCode){
 
 //Fyller ut alle 5 Study Cards med tilfeldig valgte spørsmål.
 function generateCards(courseCode){
+
   let questionpool = generateQuestionPool(courseCode)
-  let currentCards = []
+  let randomlySelectedCards = []
+
   for(let i = 0;i<5;i++){
-    let randomitem = random_item(questionpool);
-    currentCards.push(randomitem);
-    questionpool = questionpool.filter(el => el !== randomitem);
+    let randomCard = randomItemFrom(questionpool);
+    randomlySelectedCards.push(randomCard);
+    questionpool = questionpool.filter(el => el !== randomCard); //Forhindrer duplikat spørsmål.
   }
 
-  console.log(currentCards);
-
-  $("#question1").append(currentCards[0].question);
-	$("#answer1").append(currentCards[0].answer);
-	$("#question2").append(currentCards[1].question);
-	$("#answer2").append(currentCards[1].answer);
-	$("#question3").append(currentCards[2].question);
-  $("#answer3").append(currentCards[2].answer);
-	$("#question4").append(currentCards[3].question);
-	$("#answer4").append(currentCards[3].answer);
-	$("#question5").append(currentCards[4].question);
-	$("#answer5").append(currentCards[4].answer);
-
+  //Append to DOM:
+  $("#question1").append(randomlySelectedCards[0].question);
+	$("#answer1").append(randomlySelectedCards[0].answer);
+	$("#question2").append(randomlySelectedCards[1].question);
+	$("#answer2").append(randomlySelectedCards[1].answer);
+	$("#question3").append(randomlySelectedCards[2].question);
+  $("#answer3").append(randomlySelectedCards[2].answer);
+	$("#question4").append(randomlySelectedCards[3].question);
+	$("#answer4").append(randomlySelectedCards[3].answer);
+	$("#question5").append(randomlySelectedCards[4].question);
+	$("#answer5").append(randomlySelectedCards[4].answer);
 }
 
 //Returner et Array med alle kort fra et bestemt fag.
@@ -152,7 +152,7 @@ function refreshCards(courseCode){
 }
 
 //Returner et tilfeldig element fra en ArrayList.
-function random_item(arrayList){
+function randomItemFrom(arrayList){
 	return arrayList[Math.floor(Math.random()*arrayList.length)];
 }
 
