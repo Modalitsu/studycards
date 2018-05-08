@@ -119,16 +119,16 @@ function generateCards(courseCode){
   }
 
   //Append to DOM:
-  $("#question1").append(randomlySelectedCards[0].question).fadeIn();
-	$("#answer1").append(randomlySelectedCards[0].answer).fadeIn();
-	$("#question2").append(randomlySelectedCards[1].question).fadeIn();
-	$("#answer2").append(randomlySelectedCards[1].answer).fadeIn();
-	$("#question3").append(randomlySelectedCards[2].question).fadeIn();
-  $("#answer3").append(randomlySelectedCards[2].answer).fadeIn();
-	$("#question4").append(randomlySelectedCards[3].question).fadeIn();
-	$("#answer4").append(randomlySelectedCards[3].answer).fadeIn();
-	$("#question5").append(randomlySelectedCards[4].question).fadeIn();
-	$("#answer5").append(randomlySelectedCards[4].answer).fadeIn();
+  $("#question1").append(randomlySelectedCards[0].question).fadeIn(200);
+	$("#answer1").append(randomlySelectedCards[0].answer).fadeIn(200);
+	$("#question2").append(randomlySelectedCards[1].question).fadeIn(200);
+	$("#answer2").append(randomlySelectedCards[1].answer).fadeIn(200);
+	$("#question3").append(randomlySelectedCards[2].question).fadeIn(200);
+  $("#answer3").append(randomlySelectedCards[2].answer).fadeIn(200);
+	$("#question4").append(randomlySelectedCards[3].question).fadeIn(200);
+	$("#answer4").append(randomlySelectedCards[3].answer).fadeIn(200);
+	$("#question5").append(randomlySelectedCards[4].question).fadeIn(200);
+	$("#answer5").append(randomlySelectedCards[4].answer).fadeIn(200);
 }
 
 //Returner et Array med alle kort fra et bestemt fag.
