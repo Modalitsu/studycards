@@ -109,6 +109,10 @@ h2{
     transform:rotate(360deg);
 }
 
+.answer p{
+  padding: 20px;
+}
+
 @media only screen and (min-width: 1000px) {
   .content{
     width: 80%;
