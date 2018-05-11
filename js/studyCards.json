@@ -1,5 +1,4 @@
-//JSON database
-const database = {
+{
   "fag" : {
     "info102" : {
       "cards" : {
@@ -118,87 +117,4 @@ const database = {
       }
     }
   }
-}
-
-
-//Main.
-function main(courseCode){
-	generateCards(courseCode);
-
-	//Jquery Hendelses håndtering:
-	$('.answer').hide();
-  $('.button').on('click',function(){
-    $(this).next().slideToggle(200)
-  });
-
-	//Refresh animasjon.
-  $(".rotate").click(function(){
-    $(this).toggleClass("down")  ;
-  })
-}
-
-//Fyller ut alle 5 Study Cards med tilfeldig valgte spørsmål.
-function generateCards(courseCode){
-
-  let questionpool = generateQuestionPool(courseCode)
-  let randomlySelectedCards = []
-
-  for(let i = 0;i<5;i++){
-    let randomCard = randomItemFrom(questionpool);
-    randomlySelectedCards.push(randomCard);
-    questionpool = questionpool.filter(el => el !== randomCard); //Forhindrer duplikat spørsmål.
-  }
-
-  //Append to DOM:
-  $("#question1").append(randomlySelectedCards[0].question).fadeIn(200);
-	$("#answer1").append(randomlySelectedCards[0].answer).fadeIn(200);
-	$("#question2").append(randomlySelectedCards[1].question).fadeIn(200);
-	$("#answer2").append(randomlySelectedCards[1].answer).fadeIn(200);
-	$("#question3").append(randomlySelectedCards[2].question).fadeIn(200);
-  $("#answer3").append(randomlySelectedCards[2].answer).fadeIn(200);
-	$("#question4").append(randomlySelectedCards[3].question).fadeIn(200);
-	$("#answer4").append(randomlySelectedCards[3].answer).fadeIn(200);
-	$("#question5").append(randomlySelectedCards[4].question).fadeIn(200);
-	$("#answer5").append(randomlySelectedCards[4].answer).fadeIn(200);
-}
-
-//Returner et Array med alle kort fra et bestemt fag.
-function generateQuestionPool(courseCode){
-
-	var questionPool = [];
-	let course = database.fag[courseCode].cards;
-
-  for (var key in course){
-		questionPool.push(course[key]);
-	}
-
-	return questionPool;
-}
-
-//Deler ut nye spørsmål.
-function refreshCards(courseCode){
-	$('.answer').hide();
-	removeCards();
-	generateCards(courseCode);
-}
-
-//Returner et tilfeldig element fra en ArrayList.
-function randomItemFrom(arrayList){
-	return arrayList[Math.floor(Math.random()*arrayList.length)];
-}
-
-//Tømmer alle kort i document
-function removeCards(){
-	$("#question1").empty().fadeOut(1);
-	$("#answer1").empty().fadeOut(1);
-	$("#question1").empty().fadeOut(1);
-	$("#answer1").empty().fadeOut(1);
-	$("#question2").empty().fadeOut(1);
-	$("#answer2").empty().fadeOut(1);
-	$("#question3").empty().fadeOut(1);
-	$("#answer3").empty().fadeOut(1);
-	$("#question4").empty().fadeOut(1);
-	$("#answer4").empty().fadeOut(1);
-	$("#question5").empty().fadeOut(1);
-	$("#answer5").empty().fadeOut(1);
 }

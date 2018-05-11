@@ -113,6 +113,14 @@ h2{
   padding: 20px;
 }
 
+.answer hr{
+  margin-right: 1em;
+}
+
+.answer li{
+  margin: 18px;
+}
+
 @media only screen and (min-width: 1000px) {
   .content{
     width: 80%;
