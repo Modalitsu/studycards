@@ -115,7 +115,7 @@ function generateCards(courseCode){
   for(let i = 0;i<5;i++){
     let randomCard = randomItemFrom(questionpool);
     randomlySelectedCards.push(randomCard);
-    questionpool = questionpool.filter(el => el !== randomCard); //Forhindrer duplikat spørsmål.
+    questionpool = questionpool.filter(el => el !== randomCard); //Forhindrer duplikater.
   }
 
   //Append to DOM:
