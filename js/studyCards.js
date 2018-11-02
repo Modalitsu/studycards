@@ -45,7 +45,7 @@ const database = {
         },
         card7: {
           answer: "Central Processing Unit",
-          question: "Hva står CPU for?",
+          question: "Hva står CP skada for?",
           type: "QandA",
           keywords: ["info100"]
         }
