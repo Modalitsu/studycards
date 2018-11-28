@@ -7,47 +7,81 @@ const database = {
           answer: "100010",
           question: "Hva er desimaltallet 34, i binærform?",
           type: "QandA",
-          keywords: ["info100"]
+          keywords: ["info100", "HØST2015 - Oppgave 1.1"]
         },
         card2: {
           answer: "26",
           question: "Hva er binærtallet 11010, i desimalform?",
           type: "QandA",
-          keywords: ["info100"]
+          keywords: ["info100", "HØST2015 - Oppgave 1.2"]
         },
         card3: {
           answer:
-            "UTF-8 (8-bit Unicode Transformation Format) er en binær representasjonsform for tegn i Unicode-tegnsett (en numerert samling av tegn)",
+            "UTF (Unicode Transformation Format) er en binær representasjonsform for tegn i Unicode-tegnsett (en numerert samling av tegn). UTF forteller oss hvilken, og hvor mange bytes man benytter seg av når man ønsker å representere et eller annet tegn",
           question: "Hva er UTF, og hva er forholdet mellom UTF og Unicode?",
           type: "QandA",
-          keywords: ["info100"]
+          keywords: ["info100", "HØST2015 - Oppgave 1.3"]
         },
         card4: {
           answer:
-            "Fordi det finnes ulemper og fordeler med alle UTF varianter. F.eks, bruker UTF-32 fire bytes på å representere hvert symbol i motsetning til UTF-8 som bruker mellom 1 og 4 bytes. Fordelen med å bruke en fiksert bit sekvens på 4 bytes er at det blir mye mer effektivt å søke igjennom teksten. Det er derimot veldig lite effektivt med tanke på lagringsplass da hvert symbol tar 4 bytes uansett.",
+            "Fordi det finnes ulemper og fordeler med alle UTF varianter. F.eks, bruker UTF-32 en fiksert sekvens på fire bytes på å representere hvert symbol i motsetning til UTF-8 som kun bruker mellom 1 og 4 bytes. Fordelen med å bruke en fiksert bit sekvens er at det blir mye mer effektivt å søke igjennom teksten. Det er derimot veldig lite effektivt med tanke på lagringsplass da hvert symbol tar 4 bytes uansett hvilken symbol det representerer.",
           question: "Hvorfor finnes det ulike varianter av UTF, som UTF-8 og UTF-32?",
           type: "QandA",
-          keywords: ["info100"]
+          keywords: ["info100", "HØST2015 - Oppgave 1.4"]
         },
         card5: {
           answer:
             "UTF-8 representerer numererte Unicode-tegn med 1 til 4 byte, og er konstruert slik at de første 128 tegnene (U+0000 til U+007F), samsvarer nøyaktig med US-ASCII-standarden. UTF-8 er dermed bakoverkompatibelt med systemer som støtter ASCII-tekst.",
           question: "Hva er poenget med UTF-8?",
           type: "QandA",
-          keywords: ["info100"]
+          keywords: ["info100", "HØST2015 - Oppgave 1.5"]
         },
         card6: {
           answer:
             'Fetch/Execute syklusen er en slags "oppgave motor" i PC\'en som konstant går igjennom en syklus av operasjoner, og som utfører en bestemt instruks etter hver iterasjon. Selve syklusen består av 5 spesifikke steg som gjentas i denne rekkefølgen: <br> <li>1. Instruction Fetch - Hente neste instruksjon  <br> <li>2.Instruction Decode - Finn ut hva instruksjonen består av  <br> <li>3.Data Fetch - Samle inn dataen som trengs for å utføre instruksjonen <br> <li>4.Instruction Execute - Utfør selve intruksen  <br><li>5.Result Return - returner og lagre resultatet av instruksjonen',
-          question: "Forklar Fetch/Execute syklusen som alltid foregår i en CPU",
+          question: "Forklar alle trinnene i Fetch/Execute syklusen i en CPU",
           type: "QandA",
-          keywords: ["info100"]
+          keywords: ["info100", "HØST2015 - Oppgave 2.5"]
         },
         card7: {
           answer: "Central Processing Unit",
           question: "Hva står CPU for?",
           type: "QandA",
-          keywords: ["info100"]
+          keywords: ["info100", "HØST2015 - Oppgave 2.2"]
+        },
+        card8: {
+          answer: "TCP/IP Står for <br> <li> <b>TCP:</b> Transmission Control Protocol <br> <li> <b>IP:</b> Internet Protocol",
+          question: "Hva står TCP og IP for når vi snakker om datanettverk?",
+          type: "QandA",
+          keywords: ["info100", "HØST2014 - Oppgave 3.1"]
+        },
+        card9: {
+          answer:
+            "TCP (Transmission Control Protocol) tilbyr en garanti om at dataen/bytes som blir motatt av en agent fra en annen, er identiske til de som ble sendt og at de blir motatt i riktig rekkefølge. IP protokollen sørger å faktisk få levert disse til riktig mottaker.",
+          question: "Hva er det TCP ønsker å tilby, som ikke tilbys av IP?",
+          type: "QandA",
+          keywords: ["info100", "HØST2014 - Opggave 3.3"]
+        },
+        card10: {
+          answer:
+            "Livssyklus modellen er en av nøkkelkonseptene i systemutvikling. Et systems livssyklus inneholder generelt en serie av utviklingssteg, regulert av forskjellige administrative valg som bestemmer når systemet er utviklet nok til å kunne forlate et steg, og gå inn i et annet. Eksempeler på ulike livssyklus modeller kan f.eks være fossefalls-modellen eller den agile-modellen.",
+          question: "Hva er en livssyklus model i systemutviklings sammenheng?",
+          type: "QandA",
+          keywords: ["info100", "HØST2014 - Oppgave 2.4"]
+        },
+        card11: {
+          answer:
+            "En heuristisk evaluering er en analytisk metode der en eller flere eksperter sammenligner et produkt's design opp mot en predefinert liste med design-prinsipper (heurestikker). Denne måten å evaluere interaksjonsutformingen til en nettside/artefakt på er som regel mye billigere og raskere en å bruke massevis av empirisk data for å bestemme forskjellige design valg på.",
+          question: "Hva er en heuristisk evaluering i forbindelse med interaksjonsutforming?",
+          type: "QandA",
+          keywords: ["info100", "HØST2014 - Oppgave 5.2"]
+        },
+        card12: {
+          answer:
+            "<li><b>Brubkarhetsprøver/Usability testing:</b> innebærer empiriske (målbare) data som noteres ned under kontrollerte situasjoner, helst med virkelige brukere. Et tilfelle kan f.eks være å måle hvor lang tid eller hvor mange klikk en bruker trenger for å utføre en essensiel oppgave i en applikasjon.",
+          question: "Hva innebærer Usability testing som evalueringsmåte i interaksjonsutforming?",
+          type: "QandA",
+          keywords: ["info100", "HØST2014 - Oppgave 5.4"]
         }
       }
     },
@@ -220,11 +254,17 @@ function renderCards(cardsToRender) {
   $("#answer1")
     .append(cardsToRender[0].answer)
     .fadeIn(200);
+  $("#meta1")
+    .append(cardsToRender[0].keywords[1])
+    .fadeIn(200);
   $("#question2")
     .append(cardsToRender[1].question)
     .fadeIn(200);
   $("#answer2")
     .append(cardsToRender[1].answer)
+    .fadeIn(200);
+  $("#meta2")
+    .append(cardsToRender[1].keywords[1])
     .fadeIn(200);
   $("#question3")
     .append(cardsToRender[2].question)
@@ -232,17 +272,26 @@ function renderCards(cardsToRender) {
   $("#answer3")
     .append(cardsToRender[2].answer)
     .fadeIn(200);
+  $("#meta3")
+    .append(cardsToRender[2].keywords[1])
+    .fadeIn(200);
   $("#question4")
     .append(cardsToRender[3].question)
     .fadeIn(200);
   $("#answer4")
     .append(cardsToRender[3].answer)
     .fadeIn(200);
+  $("#meta4")
+    .append(cardsToRender[0].keywords[1])
+    .fadeIn(200);
   $("#question5")
     .append(cardsToRender[4].question)
     .fadeIn(200);
   $("#answer5")
     .append(cardsToRender[4].answer)
+    .fadeIn(200);
+  $("#meta5")
+    .append(cardsToRender[4].keywords[1])
     .fadeIn(200);
 }
 
@@ -278,10 +327,7 @@ function removeCards() {
   $("#answer1")
     .empty()
     .fadeOut(1);
-  $("#question1")
-    .empty()
-    .fadeOut(1);
-  $("#answer1")
+  $("#meta1")
     .empty()
     .fadeOut(1);
   $("#question2")
@@ -290,10 +336,16 @@ function removeCards() {
   $("#answer2")
     .empty()
     .fadeOut(1);
+  $("#meta2")
+    .empty()
+    .fadeOut(1);
   $("#question3")
     .empty()
     .fadeOut(1);
   $("#answer3")
+    .empty()
+    .fadeOut(1);
+  $("#meta3")
     .empty()
     .fadeOut(1);
   $("#question4")
@@ -302,10 +354,16 @@ function removeCards() {
   $("#answer4")
     .empty()
     .fadeOut(1);
+  $("#meta4")
+    .empty()
+    .fadeOut(1);
   $("#question5")
     .empty()
     .fadeOut(1);
   $("#answer5")
+    .empty()
+    .fadeOut(1);
+  $("#meta5")
     .empty()
     .fadeOut(1);
 }

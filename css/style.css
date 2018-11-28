@@ -4,7 +4,7 @@ body {
   margin: 0px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -14,10 +14,9 @@ ul {
   padding: 0;
 }
 
-h2{
+h2 {
   margin-right: 13px;
 }
-
 
 #refreshCards {
   padding: 15px;
@@ -26,8 +25,7 @@ h2{
   margin-bottom: 2em;
 }
 
-
-.header{
+.header {
   display: flex;
   justify-content: center;
 }
@@ -39,31 +37,41 @@ h2{
   margin: 5px;
 }
 
+.answer .cardmetadata {
+  padding: 0px;
+  position: relative;
+  opacity: 0.6;
+  font-size: 10px;
+  bottom: 10px;
+  right: 20px;
+  float: right;
+}
+
 .redDiv {
-  background: #F00000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f00000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dc281e, #f00000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dc281e, #f00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .yellowDiv {
-  background-color: #E5A227;
+  background-color: #e5a227;
 }
 
 .blueDiv {
-  background: #000428;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #004e92, #000428); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.greenDiv{
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+.greenDiv {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #0f9b0f, #000000); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.blackDiv{
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+.blackDiv {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -71,7 +79,7 @@ h2{
 .yellowDiv,
 .blueDiv,
 .greenDiv,
-.blackDiv{
+.blackDiv {
   width: 100%;
   padding: 1em 0em 2em 1em;
   margin-bottom: 0.5em;
@@ -88,7 +96,7 @@ h2{
   transition: 0.1s;
 }
 
-.button:hover{
+.button:hover {
   box-shadow: inset 0px 1px 0px 0px;
 }
 
@@ -97,44 +105,44 @@ h2{
   cursor: not-allowed;
 }
 
-.rotate{ /*Animation for refresh icon*/
-    -moz-transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+.rotate {
+  /*Animation for refresh icon*/
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.rotate.down{
-    -moz-transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
-    transform:rotate(360deg);
+.rotate.down {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
-.answer p{
+.answer p {
   padding: 20px;
 }
 
-.answer hr{
+.answer hr {
   margin-right: 1em;
 }
 
-.answer li{
+.answer li {
   margin: 18px;
 }
 
 @media only screen and (min-width: 1000px) {
-  .content{
+  .content {
     width: 80%;
     margin: auto;
   }
-
 }
 
-@media only screen and (max-width: 500px){
-  h2{
+@media only screen and (max-width: 500px) {
+  h2 {
     font-size: 120%;
   }
 
-  p{
-    font-size: 110%
+  p {
+    font-size: 110%;
   }
 }
