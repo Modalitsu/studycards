@@ -78,10 +78,45 @@ const database = {
         },
         card12: {
           answer:
-            "<li><b>Brubkarhetsprøver/Usability testing:</b> innebærer empiriske (målbare) data som noteres ned under kontrollerte situasjoner, helst med virkelige brukere. Et tilfelle kan f.eks være å måle hvor lang tid eller hvor mange klikk en bruker trenger for å utføre en essensiel oppgave i en applikasjon.",
+            "<li><b>Brubkarhetsprøver/Usability testing:</b> <br> Innebærer empirisk (målbare) data som noteres ned under kontrollerte situasjoner, helst med virkelige brukere. Et tilfelle kan f.eks være å måle hvor lang tid eller hvor mange klikk en bruker trenger for å utføre en essensiel oppgave i en applikasjon. Dette er en mye dyrere og tregere evaluerings metode å ta i bruk en én analytisk evaluering, men kan ofte gi veldig konkrete svar på hva som fungere og ikke fungerer i et system.",
           question: "Hva innebærer Usability testing som evalueringsmåte i interaksjonsutforming?",
           type: "QandA",
           keywords: ["info100", "HØST2014 - Oppgave 5.4"]
+        },
+        card13: {
+          answer:
+            "<b>CRM = Customer-Relationship Management.</b> Et CRM system forsøker å forbedrede forholdet mellom en forretning og dets kunder, ofte ved hjelp av utfyllende data analyser av kundens kjøpsmønster og ved å tilby en eller annen form for rabatt eller gode for å få kunden til å komme tibake til bedriften.",
+          question: "Hva står CRM for i forbindelse med informasjonsystemer?",
+          type: "QandA",
+          keywords: ["info100", "HØST2015 - Oppgave 4.4"]
+        },
+        card14: {
+          answer:
+            "Et informasjons system er noe som driver med innsamling, lagring, bearbeiding, overføring og presentasjon av informasjon. For eksempel: Facebook.com, en telefonkatalog, snapchat osv. ",
+          question: "Hva er et informasjons system?",
+          type: "QandA",
+          keywords: ["info100", "HØST2015 - Oppgave 4.1"]
+        },
+        card15: {
+          answer:
+            "Sekundærlager brukes som persistente lager for data. I motsetning til primærminne så slettes ikke dataen som lagres der når PCen blir skrudd av. Eksempler på ulike sekundærlager: <br> <li>Magnetisk/SSD Harddisk <li>USB Minnepenn <li>CD/DVD Plater",
+          question: "Hva er et sekundærlager? Gi eksempler på ulike typer.",
+          type: "QandA",
+          keywords: ["info100", "HØST2016 - Oppgave 1.1"]
+        },
+        card16: {
+          answer:
+            "En cache er generelt sett et lager hvor data som blir ofte brukt lagres slik at det kan hentes ut igjen raskere en vanlig.",
+          question: "Hva er et hurtiglager/cache?",
+          type: "QandA",
+          keywords: ["info100", "HØST2015 - Oppgave 1.3"]
+        },
+        card17: {
+          answer:
+            "Multipurpose Internet Mail Extensions (MIME) er en internett standard som utvider email formatet i et forsøk på å gjøre e-mails rikere i innhold. MIME gjør dette ved å gi støtte til ting som video, lyd, tegn som er utenfor ASCII enkoding osv.",
+          question: "Hva står MIME for i internettsammenheng, og hva brukes det til??",
+          type: "QandA",
+          keywords: ["info100", "HØST2015 - Oppgave 2.4"]
         }
       }
     },
