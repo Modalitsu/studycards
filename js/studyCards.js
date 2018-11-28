@@ -181,7 +181,7 @@ const database = {
 
 //Main.
 function main(courseCode) {
-  generateCards(courseCode);
+  pick5Cards(courseCode);
 
   //Jquery Hendelses håndtering:
   $(".answer").hide();
@@ -198,46 +198,51 @@ function main(courseCode) {
 }
 
 //Fyller ut alle 5 Study Cards med tilfeldig valgte spørsmål.
-function generateCards(courseCode) {
+function pick5Cards(courseCode) {
   let questionpool = generateQuestionPool(courseCode);
-  let randomlySelectedCards = [];
+  let cardsToRender = [];
 
   for (let i = 0; i < 5; i++) {
     let randomCard = randomItemFrom(questionpool);
-    randomlySelectedCards.push(randomCard);
+    cardsToRender.push(randomCard);
     questionpool = questionpool.filter(el => el !== randomCard); //Forhindrer duplikater.
   }
 
-  //Append to DOM:
+  renderCards(cardsToRender);
+}
+
+//Konstruer 5 kort på skjermen
+function renderCards(cardsToRender) {
+  //Render the cards on the page:
   $("#question1")
-    .append(randomlySelectedCards[0].question)
+    .append(cardsToRender[0].question)
     .fadeIn(200);
   $("#answer1")
-    .append(randomlySelectedCards[0].answer)
+    .append(cardsToRender[0].answer)
     .fadeIn(200);
   $("#question2")
-    .append(randomlySelectedCards[1].question)
+    .append(cardsToRender[1].question)
     .fadeIn(200);
   $("#answer2")
-    .append(randomlySelectedCards[1].answer)
+    .append(cardsToRender[1].answer)
     .fadeIn(200);
   $("#question3")
-    .append(randomlySelectedCards[2].question)
+    .append(cardsToRender[2].question)
     .fadeIn(200);
   $("#answer3")
-    .append(randomlySelectedCards[2].answer)
+    .append(cardsToRender[2].answer)
     .fadeIn(200);
   $("#question4")
-    .append(randomlySelectedCards[3].question)
+    .append(cardsToRender[3].question)
     .fadeIn(200);
   $("#answer4")
-    .append(randomlySelectedCards[3].answer)
+    .append(cardsToRender[3].answer)
     .fadeIn(200);
   $("#question5")
-    .append(randomlySelectedCards[4].question)
+    .append(cardsToRender[4].question)
     .fadeIn(200);
   $("#answer5")
-    .append(randomlySelectedCards[4].answer)
+    .append(cardsToRender[4].answer)
     .fadeIn(200);
 }
 
@@ -257,12 +262,12 @@ function generateQuestionPool(courseCode) {
 function refreshCards(courseCode) {
   $(".answer").hide();
   removeCards();
-  generateCards(courseCode);
+  pick5Cards(courseCode);
 }
 
 //Returner et tilfeldig element fra en ArrayList.
 function randomItemFrom(arrayList) {
-  return arrayList[Math.floor(Math.random() * arrayList.length + 1)];
+  return arrayList[Math.floor(Math.random() * arrayList.length)];
 }
 
 //Tømmer alle kort i document
@@ -303,4 +308,16 @@ function removeCards() {
   $("#answer5")
     .empty()
     .fadeOut(1);
+}
+
+//Fisher-Yates Array Shuffle.
+function shuffle(a) {
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
+  }
+  return a;
 }
